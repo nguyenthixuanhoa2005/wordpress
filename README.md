@@ -1,4 +1,6 @@
 # 📘 Student Manager - WordPress Plugin
+## Giao diện
+![Danhsachsinhvien](https://github.com/user-attachments/assets/5c8021c1-7e1c-4ad1-996a-46dcff25eade)
 
 ## 📌 Giới thiệu
 **Student Manager** là một plugin WordPress mạnh mẽ và nhẹ nhàng giúp quản lý danh sách sinh viên một cách chuyên nghiệp. Plugin này cho phép bạn lưu trữ, quản lý thông tin chi tiết và hiển thị danh sách sinh viên ra ngoài giao diện web thông qua các Shortcode linh hoạt.
