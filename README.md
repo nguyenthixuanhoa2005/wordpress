@@ -41,7 +41,7 @@ Cấu trúc chuẩn giúp dễ dàng bảo trì và mở rộng:
 wp-content/plugins/student-manager/
 ├── assets/                 # Chứa tài liệu tĩnh
 │   ├── css/                # Style cho bảng sinh viên
-│   └── images/             # Ảnh chụp màn hình (screenshots)
+│   └─
 ├── includes/               # Chứa các file xử lý logic tách biệt
 ├── student-manager.php     # File chính (Plugin Header)
 └── README.md               # Hướng dẫn sử dụng
