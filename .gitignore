@@ -1,0 +1,55 @@
+# ==========================================
+# GITIGNORE CHUẨN CHO WORDPRESS (THEME + PLUGIN)
+# ==========================================
+
+# 1. Bỏ qua các file cấu hình hệ thống và bảo mật
+wp-config.php
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+*.log
+error_log
+wp-content/debug.log
+
+# 2. Bỏ qua bộ cài đặt gốc của WordPress (Core)
+# Chúng ta không nên đưa nhân WP lên Git
+wp-admin/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# 3. Quản lý thư mục wp-content
+# Mặc định bỏ qua mọi thứ trong wp-content...
+wp-content/*
+
+# ...NHƯNG giữ lại thư mục Themes và Plugins của bạn
+!wp-content/themes/
+!wp-content/plugins/
+
+# 4. Bỏ qua các thư mục rác/tạm thời trong wp-content
+wp-content/upgrade/
+wp-content/cache/
+wp-content/languages/
+wp-content/uploads/
+# Lưu ý: Nếu bạn muốn đẩy cả ảnh (uploads) lên thì hãy thêm dấu # vào dòng trên
+
+# 5. Giữ lại thư mục chứa Database và Ảnh kết quả
+!_database/
+!screenshots/
+
+# 6. Các file hệ thống khác
+.DS_Store
+Thumbs.db

@@ -1,0 +1,88 @@
+
+/* Tổng thể bảng */
+.sm-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 30px 0;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.3s;
+}
+
+/* Responsive bảng */
+.sm-table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Đầu bảng */
+.sm-table thead tr {
+    background: linear-gradient(90deg, #009879 0%, #00bfae 100%);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Ô dữ liệu */
+.sm-table th,
+.sm-table td {
+    padding: 14px 18px;
+    text-align: center;
+}
+
+/* Kẻ dòng xen kẽ (Zebra Stripes) */
+.sm-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+}
+
+.sm-table tbody tr:nth-of-type(even) {
+    background-color: #f8fdfa;
+}
+
+/* Dòng cuối cùng */
+.sm-table tbody tr:last-of-type {
+    border-bottom: 2px solid #00bfae;
+}
+
+/* Hiệu ứng khi di chuột qua dòng */
+.sm-table tbody tr:hover {
+    background: #e0f7f4;
+    cursor: pointer;
+    color: #009879;
+    box-shadow: 0 2px 12px rgba(0, 185, 174, 0.08);
+}
+
+/* Bo tròn góc cho header và dòng cuối */
+.sm-table thead tr th:first-child {
+    border-top-left-radius: 12px;
+}
+.sm-table thead tr th:last-child {
+    border-top-right-radius: 12px;
+}
+.sm-table tbody tr:last-of-type td:first-child {
+    border-bottom-left-radius: 12px;
+}
+.sm-table tbody tr:last-of-type td:last-child {
+    border-bottom-right-radius: 12px;
+}
+
+/* Cuộn ngang trên mobile */
+@media (max-width: 600px) {
+    .sm-table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .sm-table th, .sm-table td {
+        padding: 10px 8px;
+        font-size: 0.95em;
+    }
+}
